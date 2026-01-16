@@ -1,4 +1,4 @@
-De entre todo el codigo basura de mi compu, algunos destacan por su factor artistico. Estuve probando algunos algoritmos de procesamiento de imagenes que hice hace unos años, y debo decir que safan... 
+De entre todo el codigo basura de mi compu, algo destaca por su factor artistico. Estuve probando algunos algoritmos de procesamiento de imagenes que hice hace unos años, y debo decir que safan... 
 
 Éste algoritmo en particular, que le puse de nombre _bit swap_, es muy boludo pero queda lindo; 
 
@@ -13,3 +13,14 @@ Original             |  Bit Swap
 ![](data/image3.png) | ![](data/output_swap3.png)
 ![](data/image4.jpg) | ![](data/output_swap4.png)
 ![](data/image1.jpg) | ![](data/output_swap1.png)
+
+El LSB termina siendo el MSB, y determinando así el cambio en el pixel. Mientras que el valor que tenga el MSB no importa, ya que pasa a ser el LSB y los cambios ni se ven.
+
+## Bit Reversion
+
+Los mayores cambios en la imagen se van a dar cuando el MSB y el LSB sean distintos, osea que el impacto del algoritmo depende de la imagen en si.
+Por eso, para escaparnos un poco de esa restricción, lo que hice fue crear otro algoritmo, que le dá al MSB cierta probabilidad de invertirse.
+Recorro cada pixel, y en cada canal cambio el MSB con una probabilidad p. Lo hice para 100 p's distintos, y el cambio a medida que aumenta la probabilidad se ve asi:
+
+
+![](data/bitswap.mp4)
