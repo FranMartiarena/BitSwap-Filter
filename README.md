@@ -1,4 +1,4 @@
-De entre todo el codigo basura de mi compu, algo destaca por su factor artistico. Estuve probando algunos algoritmos de procesamiento de imagenes que hice hace unos años, y debo decir que safan... 
+De entre todo el codigo basura de mi compu, algo destaca por su factor artistico. 
 
 Éste algoritmo en particular, que le puse de nombre _bit swap_, es muy boludo pero queda lindo; 
 
