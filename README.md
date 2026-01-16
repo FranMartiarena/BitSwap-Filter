@@ -28,3 +28,13 @@ Recorro cada pixel, y en cada canal cambio el MSB con una probabilidad p. Lo hic
 Los resultados pueden ser parecidos, pero no iguales a los de bit swap, ya que este algoritmo simula ruido con cierta probabilidad, osea, cambia el bit en pixeles random, mientras que el bit swap puede encontrar regiones en las que todos los LSB son iguales, lo que termina generando regiones mas notables, que resaltan mas que si usaramos este ultimo algoritmo.
 
 Para ver cuanta randomness tendrá una imagen al aplicar bit swap, se puede calcular la entropía de Shannon sobre cada bit plane de cada canal de la imagen. 
+
+----
+
+Se puede usar para generar un efecto de ruido sobre imagenes. Fijamos p, y cada frame del video es una corrida del algoritmo que recorre y cambia el pixel con probabilida p sobre la imagen original:
+
+p=0.2             | p = 0.5           |  p=0.9  
+:-------------------------:|:-------------------------:|:-------------------------:
+![](data/noise.gif) | ![](data/noise2.gif) | ![](data/noise3.gif)
+
+Si p=1 no habria cambio alguno, porque siempre cambia el MSB.
