@@ -9,6 +9,7 @@ Por ejemplo, si un pixel tiene el valor (255, 1, 1), entonces como 255 en binari
 
 Original             |  Bit Swap
 :-------------------------:|:-------------------------:
+![](data/image2.jpg) | ![](data/output_swap2.png)
 ![](data/image3.png) | ![](data/output_swap3.png)
 ![](data/image4.jpg) | ![](data/output_swap4.png)
 ![](data/image1.jpg) | ![](data/output_swap1.png)
