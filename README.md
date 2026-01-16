@@ -37,4 +37,4 @@ p=0.2             | p = 0.5           |  p=0.9
 :-------------------------:|:-------------------------:|:-------------------------:
 ![](data/noise.gif) | ![](data/noise2.gif) | ![](data/noise3.gif)
 
-Si p=1 no habria cambio alguno, porque siempre cambia el MSB.
+Si p=1 no habria efecto de ruido, porque siempre cambia el MSB.
