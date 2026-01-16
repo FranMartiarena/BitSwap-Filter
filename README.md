@@ -20,7 +20,11 @@ El LSB termina siendo el MSB, y determinando así el cambio en el pixel. Mientra
 
 Los mayores cambios en la imagen se van a dar cuando el MSB y el LSB sean distintos, osea que el impacto del algoritmo depende de la imagen en si.
 Por eso, para escaparnos un poco de esa restricción, lo que hice fue crear otro algoritmo, que le dá al MSB cierta probabilidad de invertirse.
-Recorro cada pixel, y en cada canal cambio el MSB con una probabilidad p. Lo hice para 100 p's distintos, y el cambio a medida que aumenta la probabilidad se ve asi:
+Recorro cada pixel, y en cada canal cambio el MSB con una probabilidad p. Lo hice para 100 p's distintos, y el cambio a medida que aumenta la probabilidad se ve asi (esperar que cargue el gif):
 
 
-![](data/bitswap.mp4)
+![](data/bitswap.gif)
+
+Los resultados pueden ser parecidos, pero no iguales a los de bit swap, ya que este algoritmo simula ruido con cierta probabilidad, osea, cambia el bit en pixeles random, mientras que el bit swap puede encontrar regiones en las que todos los LSB son iguales, lo que termina generando regiones mas notables, que resaltan mas que si usaramos este ultimo algoritmo.
+
+Para ver cuanta randomness tendrá una imagen al aplicar bit swap, se puede calcular la entropía de Shannon sobre cada bit plane de cada canal de la imagen. 
