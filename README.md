@@ -7,7 +7,7 @@ La idea es tomar una imagen RGB y cambiar de lugar el bit mas significativo con 
 Por ejemplo, si un pixel tiene el valor (255, 1, 1), entonces como 255 en binario es 11111111, cambiando el LSB (Least significant bit) por el MSB (Most significant bit) queda igual. Por otro lado 1 en binario es 00000001, y cambiando el LSB con el MSB queda 10000000 que es 128. Entonces el pixel final termina siendo (255, 128, 128).
 
 
-Original             |  Bit Swap
+Original|Bit Swap
 :-------------------------:|:-------------------------:
 ![](data/image2.jpg) | ![](data/output_swap2.png)
 ![](data/image3.png) | ![](data/output_swap3.png)
@@ -33,7 +33,7 @@ Para ver cuanta randomness tendrá una imagen al aplicar bit swap, se puede calc
 
 Se puede usar para generar un efecto de ruido sobre imagenes. Fijamos p, y cada frame del video es una corrida del algoritmo que recorre y cambia el pixel con probabilida p sobre la imagen original:
 
-p=0.2             | p = 0.5           |  p=0.9  
+p=0.2|p=0.5|p=0.9
 :-------------------------:|:-------------------------:|:-------------------------:
 ![](data/noise.gif) | ![](data/noise2.gif) | ![](data/noise3.gif)
 
